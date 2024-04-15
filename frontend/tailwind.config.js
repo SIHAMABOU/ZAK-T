@@ -19,6 +19,9 @@ module.exports = {
     extend: {
       fontFamily:{
          Kaushan:["Kaushan Script, cursive"],
+         Whisper:["Whisper, cursive"],
+         'dmserif': ['DM Serif', 'serif'],
+        'com': ['Comfortaa', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -89,7 +92,7 @@ module.exports = {
       animation: {
         "text-reveal": "text-reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s",
         'fade-slide-in': 'fade-slide-in 1s ease-out',
-
+        'spin-slow': 'spin 1s linear infinite',
         slidein300: "slidein 1s ease 300ms",
         slidein500: "slidein 1s ease 500ms",
         slidein700: "slidein 1s ease 700ms",

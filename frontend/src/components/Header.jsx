@@ -1,4 +1,6 @@
 import  { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import {
   
@@ -20,31 +22,34 @@ const Navbar = () => {
   // Array containing navigation items
   const navItems = [
     { id: 1, text: 'Home' ,link:"/"},
-    { id: 2, text: 'About',link:"/" },
-    { id: 3, text: 'Places' ,link:"/"},
-    { id: 4, text: 'Clients',link:"/" },
-    { id: 5, text: 'Contact',link:"/" },
+    { id: 2, text: 'About',link:"/About" },
+    { id: 3, text: 'Places' ,link:"/Places"},
+    { id: 4, text: 'Clients',link:"/Clients" },
+    { id: 5, text: 'Contact',link:"/Contact" },
   ];
 
   return (
+  <>
+    <div className='lg:container bg-orange-400 md:flex justify-between items-center px-8 mx-auto'>
+    <div className='flex items-center space-x-2 text-slate-100'>< FaPhoneAlt /> <span >+212 662252627</span></div>
+    <div className='flex items-center space-x-2 text-slate-100'><SiGmail/> <span>sihamabouelaoula@gmail.com</span></div>
+    <div className='flex items-center space-x-2 text-slate-100'><FaTiktok/> <span>zaktransport</span></div>
+  </div>
     <div className="mx-auto sticky top-0 z-50">
       {/* Logo */}
-      <div className='bg-orange-500 md:flex justify-between items-center px-8 mx-auto'>
-  <div className='flex items-center space-x-2'>< FaPhoneAlt /> <span>+212 662252627</span></div>
-  <div className='flex items-center space-x-2'><SiGmail/> <span>sihamabouelaoula@gmail.com</span></div>
-  <div className='flex items-center space-x-2'><FaTiktok/> <span>zaktransport</span></div>
-</div>
+     
 
       <div className='lg:container shadow-md w-full flex justify-between items-center h-16 px-4 bg-white'>
-        <h2 className='w-full text-sm font-bold '><span className='text-[#FF9F1C] font-custom'>ZAK-TRANSPORT</span > <br /><span className='font-serif text-base '>Touristique VIP</span></h2>
+        <h2 className='w-full text-sm font-bold '><span className='text-[#FF9F1C] font-custom'>ZAK-TRANSPORT</span > <br /><span className='font-Whisper text-2xl '>Touristique VIP</span></h2>
         {/* Desktop Navigation */}
         <ul className='hidden md:flex'>
           {navItems.map(item => (
             <li
               key={item.id}
-              className='p-3 hover:bg-[#ffa01c91]  rounded-xl m-7 cursor-pointer duration-300 hover:text-black font-customA text-l'
+              className='p-3 hover:bg-[#ffa01c91]  rounded-xl m-7 cursor-pointer duration-300 hover:text-black font-customA font-semibold text-l text-zinc-500'
             >
-              <a href="{item.link}" >{item.text}</a>
+                <Link to={item.link}>{item.text}</Link>
+              {/* <a href="{item.link}" >{item.text}</a> */}
             </li>
           ))}
         </ul>
@@ -77,6 +82,7 @@ const Navbar = () => {
         </ul>
       </div>
     </div>
+    </>
   );
 };
 
