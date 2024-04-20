@@ -1,6 +1,6 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,9 +12,18 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/csrf-token', function () {
+    return response()->json([
+        'csrfToken' => csrf_token(),
+    ]);
+});
 
 Route::get('/', function () {
     return ['Laravel' => app()->version()];
 });
+
+
+Route::post('/contact', [ContactController::class, 'store']);
+
 
 require __DIR__.'/auth.php';
