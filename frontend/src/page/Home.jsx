@@ -84,7 +84,7 @@ function Home() {
                                     </span>{" "}
                                     <br />
                                     <span className="bg-gradient-to-br from-orange-700 to-yellow-400 text-transparent bg-clip-text font-bold">
-                                        L'excellence en mouvement
+                                        L excellence en mouvement
                                     </span>
                                 </h1>
                             </Slide>
@@ -189,7 +189,7 @@ function Home() {
                                 </Card.Title>
                                 <Card.Text className="text-sm text-gray-600">
                                     Some quick example text to build on the card
-                                    title and make up the bulk of the card's
+                                    title and make up the bulk of the cards
                                     content.
                                 </Card.Text>
                                 <div className="p-4">
@@ -217,7 +217,7 @@ function Home() {
                                 </Card.Title>
                                 <Card.Text className="text-sm text-gray-600">
                                     Some quick example text to build on the card
-                                    title and make up the bulk of the card's
+                                    title and make up the bulk of the cards
                                     content.
                                 </Card.Text>
                                 <div className="p-4">
@@ -245,7 +245,7 @@ function Home() {
                                 </Card.Title>
                                 <Card.Text className="text-sm text-gray-600">
                                     Some quick example text to build on the card
-                                    title and make up the bulk of the card's
+                                    title and make up the bulk of the cards
                                     content.
                                 </Card.Text>
                                 <div className="p-4">
