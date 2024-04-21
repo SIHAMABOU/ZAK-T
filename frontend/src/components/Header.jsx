@@ -76,7 +76,8 @@ const Navbar = () => {
               key={item.id}
               className='p-4 border-b rounded-xl hover:bg-[#ad804173] duration-300 hover:text-white cursor-pointer border-gray-600'
             >
-              {item.text}
+                              <Link to={item.link}>{item.text}</Link>
+
             </li>
           ))}
         </ul>
