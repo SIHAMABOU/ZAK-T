@@ -18,7 +18,7 @@ function Footer() {
   <div className="z-10 flex h-full flex-col items-center justify-center sm:space-y-2">
 
     <h3 className="text-center text-6xl font-bold text-white font-Whisper">Enjoy Vacation With</h3>
-    <img src=".\src\assets\logo.png" className=" w-64  " alt="omage" />
+    <img src=".\assets\logo.png" className=" w-64  " alt="omage" />
 
     <p className=" text-gray-500">©Copyright | ZAK-TRANSPORT  2024. All rights reserveds</p>
     <div className="flex justify-between sm:w-[300px] pt-3 text-2xl space-x-12">

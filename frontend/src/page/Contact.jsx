@@ -42,7 +42,7 @@ function Contact() {
     return (
         <>
         <section className="relative h-44">
-            <div className="bg-[url('././assets/header.jpg')] h-full bg-cover bg-center">
+            <div className="bg-[url('./assets/header.jpg')] h-full bg-cover bg-center">
                 <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50">
                     <h1 className="text-white text-7xl font-bold font-Whisper">Contact Us</h1>
                 </div>

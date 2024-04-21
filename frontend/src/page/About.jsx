@@ -6,7 +6,7 @@ function About() {
             <div className="grid md:grid-cols-2 sm:grid-cols-1 h-auto">
                 <div className="flex justify-center items-center bg-gradient-to-r from-amber-300 to-orange-400 order-1">
                     <img
-                        src="./src/assets/gallery.png"
+                        src="./assets/gallery.png"
                         alt=""
                         className="h-96 w-96 "
                     />
@@ -40,36 +40,36 @@ function About() {
             <h2 className="text-center text-3xl p-4 font-bold font-Whisper text-amber-400">
                 OUR ADVENTAGES
             </h2>
-            <div className="min-h-screen bg-[url('././assets/transfA.jpg')] bg-cover bg-fixed opacity-65">
+            <div className="min-h-screen bg-[url('./assets/transfA.jpg')] bg-cover bg-fixed opacity-65">
                
                 <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-20  lg:pt-28">
                     <div className="text-center text-white font-bold text-3xl lg:text-xl border-gray-100  flex flex-col justify-center items-center backdrop-filter backdrop-blur-md bg-opacity-10 m-9 p-2">
-                        <div  className="w-20 "><img src="./src/assets/best-price.png" alt="" /></div>
+                        <div  className="w-20 "><img src="./assets/best-price.png" alt="" /></div>
                         <div>
                             <p>Fixed Price</p> <p>Our prices are fixed</p>
                         </div>
                     </div>
                     <div className="text-center text-white font-bold text-3xl lg:text-xl border-gray-100 flex flex-col justify-center items-center backdrop-filter backdrop-blur-md bg-opacity-10 m-9 p-2">
-                        <div  className="w-20 "><img src="./src/assets/payment.png" alt="" /></div>
+                        <div  className="w-20 "><img src="./assets/payment.png" alt="" /></div>
                         <div>
                             <p>Easy cash payment</p> <p>Payment at the reception </p>
                         </div>
                     </div>
                     <div className="text-center text-white font-bold text-3xl lg:text-xl border-gray-100 flex flex-col justify-center items-center backdrop-filter backdrop-blur-md bg-opacity-10 m-8 p-2">
-                        <div  className="w-20 "><img src="./src/assets/booking.png" alt="" /></div>
+                        <div  className="w-20 "><img src="./assets/booking.png" alt="" /></div>
                         <div>
                             <p>Easy Booking</p> <p>Your transfer is booked and confirmed
 online</p>
                         </div>
                     </div>
                     <div className="text-center text-white font-bold text-3xl lg:text-xl border-gray-100 flex flex-col justify-center items-center backdrop-filter backdrop-blur-md bg-opacity-10 m-8 p-2">
-                        <div  className="w-20 "><img src="./src/assets/available.png" alt="" /></div>
+                        <div  className="w-20 "><img src="./assets/available.png" alt="" /></div>
                         <div>
                             <p>Availability 24/7</p> <p>We are at your service 24 hours / 7days</p>
                         </div>
                     </div>
                     <div className="text-center text-white font-bold text-3xl lg:text-xl border-gray-100 flex flex-col justify-center items-center backdrop-filter backdrop-blur-md bg-opacity-10 m-8 p-2">
-                        <div  className="w-20 "><img src="./src/assets/quality.png" alt="" /></div>
+                        <div  className="w-20 "><img src="./assets/quality.png" alt="" /></div>
                         <div>
                             <p>Highly Qualified Service</p> <p>Trust us to deliver the quality service you deserve</p>
                         </div>

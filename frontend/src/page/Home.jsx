@@ -7,6 +7,12 @@ import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 import { FaPhoneAlt, FaTiktok } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import image1 from "../assets/transfA.jpg"
+import image2 from "../assets/img1.jpg"
+import image3 from "../assets/Vito.jpg"
+import image4 from "../assets/img.jpg"
+
+
 function Home() {
     const [videoVisible, setVideoVisible] = useState(false);
 
@@ -30,7 +36,7 @@ function Home() {
                     <Carousel.Item>
                         <img
                             className="d-block w-full opacity-75"
-                            src="././src/assets/transfA.jpg" // Assurez-vous du chemin correct de l'image
+                            src= {image1} 
                             alt="First slide"
                         />
                         <Carousel.Caption className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full">
@@ -51,7 +57,7 @@ function Home() {
                     <Carousel.Item>
                         <img
                             className="d-block w-full opacity-75"
-                            src="././src/assets/img1.jpg" // Assurez-vous du chemin correct de l'image
+                            src={image2} // Assurez-vous du chemin correct de l'image
                             alt="First slide"
                         />
                         <Carousel.Caption className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full">
@@ -72,7 +78,7 @@ function Home() {
                     <Carousel.Item>
                         <img
                             className="d-block w-full opacity-75"
-                            src="././src/assets/Vito.jpg" // Assurez-vous du chemin correct de l'image
+                            src={image3} // Assurez-vous du chemin correct de l'image
                             alt="First slide"
                         />
                         <Carousel.Caption className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full">
@@ -93,7 +99,7 @@ function Home() {
                     <Carousel.Item>
                         <img
                             className="d-block w-full opacity-75"
-                            src="././src/assets/img.jpg" // Assurez-vous du chemin correct de l'image
+                            src={image4}// Assurez-vous du chemin correct de l'image
                             alt="Second slide"
                         />
                         <Carousel.Caption className="absolute lg:top-1/2 left-1/2 transform -translate-x-1/2 lg:-translate-y-1/2 text-center w-full ">
@@ -127,7 +133,7 @@ function Home() {
                     <div className="lg:flex m-1">
                         <div className="lg:hidden flex flex-col justify-center items-center">
                             <img
-                                src="./src/assets/transfert.webp"
+                                src="./assets/transfert.webp"
                                 alt=""
                                 className="lg:h-72 rounded-xl  shadow-2xl w-8/12"
                             />
@@ -162,7 +168,7 @@ function Home() {
                         {/* <div className="absolute items-center rounded-2xl bg-gradient-to-b from-blue-500 to-blue-700 top-0 bottom-0 mx-10 w-90% min-w-600px"></div> */}
                         <div className="w-full lg:w-1/2 hidden lg:block ">
                             <img
-                                src="./src/assets/transfert.webp"
+                                src="./assets/transfert.webp"
                                 alt=""
                                 className="lg:h-72 pl-8 w-auto "
                             />
@@ -180,7 +186,7 @@ function Home() {
                         <Card className="w-80  p-2  bg-white rounded-xl transform transition-all hover:translate-y-2 hover:translate-x-2 duration-300 shadow-lg hover:shadow-2xl">
                             <Card.Img
                                 variant="top"
-                                src="./src/assets/touristique.jpg"
+                                src="./assets/touristique.jpg"
                                 className="h-40 object-cover rounded-xl"
                             />
                             <Card.Body>
@@ -208,7 +214,7 @@ function Home() {
                         <Card className="w-80 p-2 bg-white lg:-translate-y-7 rounded-xl  transform transition-all hover:translate-y-2 hover:translate-x-2 duration-300 shadow-lg hover:shadow-2xl">
                             <Card.Img
                                 variant="top"
-                                src="./src/assets/touriste.jpeg"
+                                src="./assets/touriste.jpeg"
                                 className="h-40 object-cover rounded-xl"
                             />
                             <Card.Body>
@@ -236,7 +242,7 @@ function Home() {
                         <Card className="w-80 p-2 bg-white rounded-xl transform transition-all hover:translate-y-2 hover:translate-x-2 duration-300 shadow-lg hover:shadow-2xl">
                             <Card.Img
                                 variant="top"
-                                src="./src/assets/chauff.webp"
+                                src="./assets/chauff.webp"
                                 className="h-40 object-cover rounded-xl"
                             />
                             <Card.Body>
@@ -270,7 +276,7 @@ function Home() {
                     {!videoVisible && (
                         <div className="relative w-full h-full">
                             <img
-                                src="./src/assets/bg.png"
+                                src="./assets/bg.png"
                                 alt="Background"
                                 className="w-full h-full bg-cover"
                             />
@@ -315,19 +321,19 @@ function Home() {
                 <div className="w-full ">
                     <div className="flex flex-col sm:flex-row">
                         <div className="sm:w-1/2 relative">
-                            <div className=" bg-[url('././assets/why.jpg')]  bg-cover bg-center h-96">
+                            <div className=" bg-[url('./assets/why.jpg')]  bg-cover bg-center h-96">
                                 <div className=" absolute top-1/3 left-3/4 transform -translate-x-1/2 -translate-y-1/2  items-center">
                                     <div className=" w-20 h-20 bg-[#e8604c] rounded-full flex justify-center items-center animate-spin mr-4">
                                         <p className="text-white font-Whisper  text-center p-1 text-md">
                                             Travels & Tours
                                         </p>
-                                        <div className=" rotate-90 w-10 h-8 -translate-x-20 bg-[url('././assets/togle.png')] bg-no-repeat "></div>
+                                        <div className=" rotate-90 w-10 h-8 -translate-x-20 bg-[url('./assets/togle.png')] bg-no-repeat "></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="sm:w-1/2 relative bg-[#313041] ">
-                            <div className="bg-[url('././assets/back.png')] absolute bottom-0 right-0 h-96 opacity-20 lg:w-96 w-80 "></div>
+                            <div className="bg-[url('./assets/back.png')] absolute bottom-0 right-0 h-96 opacity-20 lg:w-96 w-80 "></div>
                             <h1 className="m-3 text-2xl font-bold text-center bg-gradient-to-br from-orange-400 to-yellow-800 text-transparent bg-clip-text">
                                 Why Choose ZAK-TRANSPORT?
                             </h1>
@@ -368,7 +374,7 @@ function Home() {
                                     <div className="flex">
                                         <span className="pr-2 ">
                                             <img
-                                                src="./src/assets/chauffeur.png "
+                                                src="./assets/chauffeur.png "
                                                 alt=""
                                                 className="bg-[#e8604c]"
                                             />
@@ -404,7 +410,7 @@ function Home() {
                             <div className="h-96 w-72">
                                 <img
                                     className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                                    src="./src/assets/kech.jpg"
+                                    src="./assets/kech.jpg"
                                     alt=""
                                 />
                             </div>
@@ -419,7 +425,7 @@ function Home() {
                             <div className="h-96 w-72">
                                 <img
                                     className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                                    src="./src/assets/aga.jpg"
+                                    src="./assets/aga.jpg"
                                     alt=""
                                 />
                             </div>
@@ -436,7 +442,7 @@ function Home() {
                             <div className="h-96 w-72">
                                 <img
                                     className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                                    src="./src/assets/casa.jpg"
+                                    src="./assets/casa.jpg"
                                     alt=""
                                 />
                             </div>
@@ -451,7 +457,7 @@ function Home() {
                             <div className="h-96 w-72">
                                 <img
                                     className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                                    src="./src/assets/fes.jpg"
+                                    src="./assets/fes.jpg"
                                     alt=""
                                 />
                             </div>
@@ -466,7 +472,7 @@ function Home() {
                             <div className="h-96 w-72">
                                 <img
                                     className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                                    src="./src/assets/tanger.jpg"
+                                    src="./assets/tanger.jpg"
                                     alt=""
                                 />
                             </div>
@@ -481,7 +487,7 @@ function Home() {
                             <div className="h-96 w-72">
                                 <img
                                     className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                                    src="./src/assets/sahara.jpg"
+                                    src="./assets/sahara.jpg"
                                     alt=""
                                 />
                             </div>
