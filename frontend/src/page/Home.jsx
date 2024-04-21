@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Carousel } from "react-bootstrap";
-import Slide from "react-reveal/Slide";
+import {  Slide, Zoom } from "react-awesome-reveal";
 import { FaPlane } from "react-icons/fa";
 import { RiVipLine } from "react-icons/ri";
 import Card from "react-bootstrap/Card";
@@ -34,7 +34,7 @@ function Home() {
                             alt="First slide"
                         />
                         <Carousel.Caption className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full">
-                            <Slide right>
+                            <Zoom right>
                                 <h1 className="text-sm  lg:text-4xl font-semibold text-black font-Kaushan shadow-lg">
                                     BIENVENUE CHEZ{" "}
                                     <span className="bg-orange-600 text-transparent bg-clip-text">
@@ -45,7 +45,7 @@ function Home() {
                                         Sécurité et Confort
                                     </span>
                                 </h1>
-                            </Slide>
+                            </Zoom>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -76,7 +76,7 @@ function Home() {
                             alt="First slide"
                         />
                         <Carousel.Caption className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full">
-                            <Slide right>
+                            <Zoom right>
                                 <h1 className="text-sm  lg:text-4xl font-semibold text-black font-Kaushan shadow-lg">
                                     BIENVENUE CHEZ{" "}
                                     <span className="bg-orange-600 text-transparent bg-clip-text">
@@ -87,7 +87,7 @@ function Home() {
                                         L excellence en mouvement
                                     </span>
                                 </h1>
-                            </Slide>
+                            </Zoom>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>

@@ -1,6 +1,5 @@
 // App.js
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'react-reveal/globals';
 
 import Router from './router';
 
