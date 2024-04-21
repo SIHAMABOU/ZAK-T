@@ -30,7 +30,7 @@ function Home() {
                     <Carousel.Item>
                         <img
                             className="d-block w-full opacity-75"
-                            src="./src/assets/transfA.jpg" // Assurez-vous du chemin correct de l'image
+                            src="././src/assets/transfA.jpg" // Assurez-vous du chemin correct de l'image
                             alt="First slide"
                         />
                         <Carousel.Caption className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full">
@@ -51,7 +51,7 @@ function Home() {
                     <Carousel.Item>
                         <img
                             className="d-block w-full opacity-75"
-                            src="./src/assets/img1.jpg" // Assurez-vous du chemin correct de l'image
+                            src="././src/assets/img1.jpg" // Assurez-vous du chemin correct de l'image
                             alt="First slide"
                         />
                         <Carousel.Caption className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full">
@@ -72,7 +72,7 @@ function Home() {
                     <Carousel.Item>
                         <img
                             className="d-block w-full opacity-75"
-                            src="./src/assets/Vito.jpg" // Assurez-vous du chemin correct de l'image
+                            src="././src/assets/Vito.jpg" // Assurez-vous du chemin correct de l'image
                             alt="First slide"
                         />
                         <Carousel.Caption className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full">
@@ -93,7 +93,7 @@ function Home() {
                     <Carousel.Item>
                         <img
                             className="d-block w-full opacity-75"
-                            src="./src/assets/img.jpg" // Assurez-vous du chemin correct de l'image
+                            src="././src/assets/img.jpg" // Assurez-vous du chemin correct de l'image
                             alt="Second slide"
                         />
                         <Carousel.Caption className="absolute lg:top-1/2 left-1/2 transform -translate-x-1/2 lg:-translate-y-1/2 text-center w-full ">
