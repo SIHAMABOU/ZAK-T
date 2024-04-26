@@ -23,22 +23,33 @@ function Contact() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        // Convertir la valeur du téléphone en nombre
+        const phoneAsNumber = parseInt(formData.phone);
+    
+        // Vérifier si la conversion est réussie
+        if (isNaN(phoneAsNumber)) {
+            // Gérer le cas où la conversion échoue (par exemple, si le téléphone n'est pas un nombre)
+            console.error('Le numéro de téléphone doit être un nombre.');
+            return;
+        }
+    
         try {
-            const response = await axios.post('http://localhost:8000/contact', formData ,{
+            // Envoyer la requête avec le numéro de téléphone converti en entier
+            const response = await axios.post('http://localhost:8000/contact', { ...formData, phone: phoneAsNumber }, {
                 headers: {
                     'X-CSRF-TOKEN': csrfToken,
                     'Content-Type': 'application/json',
-
                 },
                 withCredentials: true,
             });
             console.log('Réponse de la requête:', response.data);
-
+    
             setResponseMessage(response.data.success);
         } catch (error) {
             setResponseMessage('Une erreur s\'est produite lors de l\'envoi du message.');
         }
     };
+    
     return (
         <>
         <section className="relative h-44">
@@ -75,7 +86,7 @@ function Contact() {
                     <div className='flex flex-col lg:flex-row m-3'>
                         <label htmlFor="phone" className="block text-lg font-serif  leading-6 text-gray-900 m-2">Phone :</label>
                         <input
-                            type="phone"
+                            type="number"
                             name="phone"
                             className='p-2 w-80 border-1 rounded-full m-1'
                             value={formData.phone}
