@@ -14,7 +14,7 @@ class ContactController extends Controller
         // Validez les données du formulaire
         $request->validate([
             'name' => 'required|string',
-            'phone' => 'required|int',
+            'phone' => 'required|integer',
             'email' => 'required|email',
             'message' => 'required|string',
         ]);
